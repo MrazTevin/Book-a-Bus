@@ -25,3 +25,9 @@ const useStyles = createUseStyles({
     textTransform: 'capitalize',
     width: 200,
 })
+
+export default function Card({image}) {
+    const classes = useStyles();
+    
+
+}
