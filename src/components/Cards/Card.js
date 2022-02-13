@@ -28,6 +28,12 @@ const useStyles = createUseStyles({
 
 export default function Card({image}) {
     const classes = useStyles();
-    
+
+    return (
+        <div className={classes.wrapper}>
+
+        </div>
+
+    )
 
 }
