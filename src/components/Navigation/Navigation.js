@@ -8,3 +8,20 @@ const useStyles = createUseStyles ( {
         textAlign: 'right',
     }
 });
+
+
+export default function Navigation() {
+    const classes = useStyles();
+    return (
+        <div className={classes.wrapper}>
+            <span>
+                Sign up
+            </span>
+            <span>
+                Log In
+                </span> 
+            
+           
+        </div>
+    )
+}   
