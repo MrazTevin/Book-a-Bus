@@ -1,19 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
-import HomePage from './components/Dashboard/HomePage';
+import { HomePage } from './components/Dashboard/HomePage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-        <Navigation/>
+         {/* <Navigation/>  */}
         <BrowserRouter>
+        <HomePage>
             <Routes>
-                <Route path = "/HomePage">
-                    <HomePage/>
-                </Route>
+                <Route index element ={<HomePage/>}></Route>
             </Routes>
+        </HomePage>
         </BrowserRouter>
     </div>
   );
