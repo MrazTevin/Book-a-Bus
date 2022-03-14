@@ -8,6 +8,13 @@ function App() {
   return (
     <div className="App">
         <Navigation/>
+        <BrowserRouter>
+            <Switch>
+                <Route path = "/HomePage">
+                    <Dashboard/>
+                </Route>
+            </Switch>
+        </BrowserRouter>
     </div>
   );
 }
