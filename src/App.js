@@ -1,8 +1,9 @@
-import React, {useState} from 'React';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import { HomePage } from './components/Dashboard/HomePage';
+import Login from './components/Login/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
