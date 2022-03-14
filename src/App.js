@@ -9,11 +9,11 @@ function App() {
     <div className="App">
         <Navigation/>
         <BrowserRouter>
-            <Switch>
+            <Routes>
                 <Route path = "/HomePage">
                     <HomePage/>
                 </Route>
-            </Switch>
+            </Routes>
         </BrowserRouter>
     </div>
   );
