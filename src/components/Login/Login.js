@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.css';
+import PropTypes from 'prop-types';
 
 const Login = () => {
   return (
@@ -20,6 +21,10 @@ const Login = () => {
             </form>
         </div>
   )
+}
+
+Login.propTypes =  {
+    setToken : PropTypes.func.isRequired
 }
 
 export default Login
