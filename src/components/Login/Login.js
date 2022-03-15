@@ -3,6 +3,8 @@ import './Login.css';
 import PropTypes from 'prop-types';
 
 const Login = () => {
+    const[username, setUserName] = useState();
+    const[password, setPassword] = useState();
   return (
         <div className='login-wrapper'>
             <h2>Login</h2>
