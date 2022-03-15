@@ -18,6 +18,16 @@ async function loginUser(credentials) {
 const Login = () => {
     const[username, setUserName] = useState();
     const[password, setPassword] = useState();
+
+    const handleSubmit = async e => {
+        e.preventDefault();
+        const token = await loginUser( {
+            username,
+            password
+        });
+        setToken(token);
+    }
+
   return (
         <div className='login-wrapper'>
             <h2>Login</h2>
