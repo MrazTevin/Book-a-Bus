@@ -15,7 +15,7 @@ async function loginUser(credentials) {
 
 }
 
-const Login = (setToken) => {
+const Login = ({setToken}) => {
     const[username, setUserName] = useState();
     const[password, setPassword] = useState();
 
@@ -50,6 +50,6 @@ const Login = (setToken) => {
 
 Login.propTypes =  {
     setToken : PropTypes.func.isRequired
-}
+};
 
 export default Login
