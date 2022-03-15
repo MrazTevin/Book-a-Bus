@@ -31,7 +31,7 @@ const Login = () => {
   return (
         <div className='login-wrapper'>
             <h2>Login</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>
                     <p>Username</p>
                     <input type="text" onChange={e => setUserName(e.target.value)}/>
