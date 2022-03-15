@@ -15,7 +15,7 @@ async function loginUser(credentials) {
 
 }
 
-const Login = () => {
+const Login = (setToken) => {
     const[username, setUserName] = useState();
     const[password, setPassword] = useState();
 
